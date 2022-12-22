@@ -1,0 +1,476 @@
+:root {
+    --primary: #668dcd;
+    --secondary: #304a6e;
+    --text-color: #c0d0ef;
+    --text-secondary: #0f1c30;
+    --text-tertiary: #c2c6ce;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event from */
+#event-description {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../img/img1.webp");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    ;
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 450px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+#personal-image {
+    background-image: url("../img/image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 29em;
+    height: 31em;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 0.8em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 18px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* knowledges section */
+
+#key-knowledges h2 {
+    background-color: var(--secondary);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.knowledges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4em;
+    width: 75%;
+    margin: 0 auto;
+}
+.knowledge {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+    margin: 1em 3em;
+}
+
+.knowledge .knowledge-img {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+
+}
+
+#knowledge-1 {
+    width: 130px;
+    height: 144px;
+    background-image: url("../img/logo-csharp.png");
+}
+
+#knowledge-2 {
+    width: 130px;
+    height: 144px;
+    background-image: url("../img/logo-react.png");
+}
+
+#knowledge-3 {
+    width: 180px;
+    height: 144px;
+    background-image: url("../img/logo-mssql.png");
+}
+
+#knowledge-4 {
+    width: 185px;
+    height: 153px;
+    background-image: url("../img/logo-docker.png");
+}
+
+#knowledge-5 {
+    width: 220px;
+    height: 110px;
+    background-image: url("../img/logo-rabbitmq.png");
+}
+
+#knowledge-6 {
+    width: 180px;
+    height: 144px;
+    background-image: url("../img/logo-kubernetes.png");
+}
+
+#knowledge-7 {
+    width: 180px;
+    height: 144px;
+    background-image: url("../img/logo-github.png");
+}
+
+/* Event experience */
+
+#experience {
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../img/img1.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#address,
+#about-experience {
+    max-width: 80%;
+} 
+
+#address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#address i {
+    color: var(--primary);
+    font-size: 4em;
+    
+}
+#address h3 {
+    margin-top: 1.1em;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-experience h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-experience p {
+    line-height: 1.5em;
+}
+
+/* Event detail citainer*/
+#details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 40%;
+}
+
+#detail-3 img {
+    width: 30%;
+}
+
+#detail-4 img {
+    width: 30%;
+}
+
+.detail h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #494949;
+    margin-bottom: .5em;
+}
+
+.detail p {
+    font-size: 1.2em;
+    color: #494949;
+    margin-top: .8em;
+}
+
+.detail-description p:last-of-type {
+    margin-bottom: .8em;
+}
+
+.detail span {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.detial-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: .4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/* Location*/
+#location {
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../img/img1.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#location h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#location .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+
+#footer p:nth-child(2) {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    #personal-image {
+        width: 20em;
+        height: 21em;
+    }
+    .btn {
+        opacity: 1;
+    }
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: .5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* knowledges section */
+    .knowledges {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .knowledge {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Event experience */
+    #experience    {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        max-width: 100%;
+    }
+
+    
+
+    #about-experience {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-experience h3 {
+        margin-bottom: 0;
+    }
+
+    /* Event details container */
+    .detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+        width: 90%;
+    }
+       
+    #detail-3 .detail-description {
+        order: 2
+    }
+
+    #detail-4 img {
+        order: 1;
+        width: 90%;
+    }
+    
+    #detail-4 .detail-description {
+        order: 2
+    }
+    #detail-2 .detail-description {
+        order: 2
+    }
+
+    /* Call to action ection */
+    #location {
+        text-align: center;
+    }
+    #location .btn {
+        width: 80%;
+    }
+
+}
